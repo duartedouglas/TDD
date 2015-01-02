@@ -6,7 +6,7 @@ class Calculadora
 {
 	public function soma($a, $b)
 	{
-		if ( ! is_int($a) or ! is_int($b) ) {
+		if ( ! is_numeric($a) or ! is_numeric($b) ) {
 			throw new \InvalidArgumentException("Error Processing Request", 1);
 			
 		}
